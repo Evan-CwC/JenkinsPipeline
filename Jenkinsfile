@@ -18,12 +18,6 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Code Analysis') {
-            steps {
-                echo 'Performing Code Analysis...'
-                sh 'mvn sonar:sonar'
-            }
-        }
         stage('Security Scan') {
             steps {
                 echo 'Running Security Scan...'
