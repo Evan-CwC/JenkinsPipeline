@@ -71,7 +71,6 @@ pipeline {
                 body: "The build has completed.\n\nJob: ${env.JOB_NAME}\nBuild Number: ${env.BUILD_NUMBER}\nBuild URL: ${env.BUILD_URL}",
                 to: "4933095@gmail.com",
                 attachLog: true
-
             )
         }
     }
